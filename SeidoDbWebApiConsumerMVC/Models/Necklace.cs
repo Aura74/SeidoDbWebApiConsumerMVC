@@ -14,7 +14,11 @@ namespace NecklaceModels
     public class Necklace
     {
         public int NecklaceID { get; set; }
-        public override string ToString() => $"{NecklaceID}";// ska den ens vara med
+        public string Country { get; set; }
+        public string NecklaceType { get; set; }
+        
+        public override string ToString() => $"{NecklaceID}";
+        //public override string ToString() => $"{NecklaceID} {Country} {NecklaceType}";
 
 
 
